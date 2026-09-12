@@ -25,6 +25,9 @@ public class PaymentServiceImpl implements PaymentService{
     @Value("${stripe.min-amount:50}")
     private long minAmountSmallestUnit;
 
+    @Value("${frontend.url:http://localhost:3000}")
+    private String frontendUrl;
+
     @Override
     public PaymentResponse createPaymentLink(Order order) throws StripeException {
         Stripe.apiKey=stripeSecretKey;
@@ -41,8 +44,8 @@ public class PaymentServiceImpl implements PaymentService{
         SessionCreateParams.Builder builder = SessionCreateParams.builder()
                 .addPaymentMethodType(SessionCreateParams.PaymentMethodType.CARD)
                 .setMode(SessionCreateParams.Mode.PAYMENT)
-                .setSuccessUrl("http://localhost:3000/payment/success/"+order.getId())
-                .setCancelUrl("http://localhost:3000/payment/fail");
+                .setSuccessUrl(frontendUrl + "/payment/success/" + order.getId())
+                .setCancelUrl(frontendUrl + "/payment/fail");
 
         List<OrderItem> items = order.getItems();
         boolean usePerItem = false;

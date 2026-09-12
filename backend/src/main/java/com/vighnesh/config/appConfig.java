@@ -43,7 +43,7 @@ public class appConfig {
             public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
                 CorsConfiguration cfg=new CorsConfiguration();
                 cfg.setAllowedOrigins(Arrays.asList(
-                        "https://vighnesh-food.vercel.app",
+                        "https://frontend-tau-swart-44.vercel.app",
                         "http://localhost:3000"
                 ));
                 cfg.setAllowedMethods(Collections.singletonList("*"));

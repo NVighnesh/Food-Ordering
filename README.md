@@ -286,58 +286,6 @@ Customer Payment
 /payment/success   /payment/fail
 ```
 
-The Stripe secret key is stored as an environment variable and is **not included in the GitHub repository**.
-
----
-
-# 🔑 Environment Variables
-
-The application uses environment variables for configuration and sensitive credentials.
-
-## Backend
-
-```text
-SPRING_PROFILES_ACTIVE
-DB_HOST
-DB_PORT
-DB_NAME
-DB_USERNAME
-DB_PASSWORD
-DB_SSL_MODE
-
-JWT_SECRET
-
-STRIPE_API_KEY
-STRIPE_CURRENCY
-STRIPE_MIN_AMOUNT
-
-FRONTEND_URL
-```
-
-Example configuration:
-
-```properties
-server.port=${PORT:5454}
-
-spring.profiles.active=${SPRING_PROFILES_ACTIVE:mysql}
-
-stripe.api.key=${STRIPE_API_KEY:}
-stripe.currency=${STRIPE_CURRENCY:usd}
-stripe.min-amount=${STRIPE_MIN_AMOUNT:50}
-```
-
-Database configuration:
-
-```properties
-spring.datasource.url=jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:vighnesh_foodorder}?sslMode=${DB_SSL_MODE:DISABLED}
-spring.datasource.username=${DB_USERNAME:root}
-spring.datasource.password=${DB_PASSWORD:}
-```
-
-**Never commit real passwords, API keys, JWT secrets, or database credentials to GitHub.**
-
----
-
 # 🗄️ Database
 
 The application uses a **MySQL-compatible relational database**.
@@ -590,41 +538,6 @@ https://github.com/NVighnesh/Food-Ordering
 The project uses the `main` branch for deployment.
 
 The deployment configuration is connected to GitHub so that changes pushed to the repository can trigger deployments.
-
----
-
-# 📌 Important Configuration
-
-### Frontend API Configuration
-
-The frontend communicates with the production backend through:
-
-```javascript
-export const API_URL="https://food-ordering-0cus.onrender.com"
-```
-
-### Backend Port
-
-The backend supports the deployment-provided `PORT` environment variable:
-
-```properties
-server.port=${PORT:5454}
-```
-
-This allows:
-
-- `5454` during local development
-- Render-provided `PORT` during production
-
-### Stripe Redirects
-
-Stripe success and failure URLs use the configured frontend URL:
-
-```text
-FRONTEND_URL
-```
-
-This allows the same backend code to work in local and production environments.
 
 ---
 

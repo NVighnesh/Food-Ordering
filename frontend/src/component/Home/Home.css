@@ -1,0 +1,34 @@
+.banner{
+    background-image: url("https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    /* make the banner fill the remaining viewport below the fixed navbar */
+    height: calc(100vh - var(--navbar-height, 64px));
+}
+.cover{
+    width: 100%;
+    height: calc(100vh - var(--navbar-height, 64px));
+    background-color: black;
+    opacity: 0.4;
+    z-index: 1;
+
+}
+
+/* image element placed inside banner */
+.banner-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* show full image without cropping */
+    object-position: center center;
+    z-index: 0;
+}
+
+/* ensure the banner content sits above the overlay */
+.banner > .w\[50vw\] {
+    z-index: 2;
+}

@@ -514,15 +514,6 @@ The application is deployed using three main services.
         └─────────────────────┘
 ```
 
-### Production URLs
-
-**Frontend**
-
-https://frontend-tau-swart-44.vercel.app/
-
-**Backend**
-
-https://food-ordering-0cus.onrender.com
 
 ---
 

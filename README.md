@@ -10,7 +10,6 @@ The application supports both **customers** and **restaurant owners**, providing
 
 - 🌐 **Live Application:** https://frontend-tau-swart-44.vercel.app/
 - 💻 **GitHub Repository:** https://github.com/NVighnesh/Food-Ordering
-- ⚙️ **Backend API:** https://food-ordering-0cus.onrender.com
 
 ---
 

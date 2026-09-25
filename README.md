@@ -526,19 +526,6 @@ https://food-ordering-0cus.onrender.com
 
 ---
 
-# 🔀 Git & GitHub
-
-The project is maintained using Git and GitHub.
-
-Repository:
-
-https://github.com/NVighnesh/Food-Ordering
-
-The project uses the `main` branch for deployment.
-
-The deployment configuration is connected to GitHub so that changes pushed to the repository can trigger deployments.
-
----
 
 # 🎯 Project Goals
 

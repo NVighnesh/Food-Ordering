@@ -564,19 +564,24 @@ This project was developed to demonstrate practical full-stack software engineer
 
 ---
 
-# 👨‍💻 Author
+## 📸 Screenshots
 
-**Vighnesh**
-
-GitHub:
-
-https://github.com/NVighnesh
+**Final Outputs**
+[Click Here](View_Outputs/)
 
 ---
 
-# ⭐ Support
+## 👤 Author
 
-If you find this project useful, consider giving the repository a ⭐ on GitHub.
+**NEDULLA VIGHNESH**  
+- GitHub: [2200032267](https://github.com/NVighnesh)  
+- LinkedIn: [N VIGHNESH](https://www.linkedin.com/in/n-vighnesh-5b74aa24a)  
+- Email:vighneshnv2@gmail.com
+---
+## ⭐ Star This Repository
+
+If you find this project useful or interesting, please ⭐ star this repository to support and encourage further development!  
+Your support means a lot! 🙏
 
 ---
 
